@@ -1,0 +1,22 @@
+24-12-19 14:26:05.681 INFO  Layline                                            - [LAY-00050] ###################################################################
+24-12-19 14:26:05.683 INFO  Layline                                            - [LAY-00050] #       Layline Reactive Engine 2.1.1 (2024-12-13 13:16:36)       #
+24-12-19 14:26:05.683 INFO  Layline                                            - [LAY-00050] #                                                                 #
+24-12-19 14:26:05.683 INFO  Layline                                            - [LAY-00050] #  Copyright (C) 2018-2024  layline.io GmbH <https://layline.io>  #
+24-12-19 14:26:05.684 INFO  Layline                                            - [LAY-00050] ###################################################################
+24-12-19 14:26:08.150 INFO  Layline                                            - [LAY-11000] trying to connect to the cluster
+24-12-19 14:26:18.206 INFO  Layline                                            - [LAY-11001] cluster successfully joined, member status is up
+24-12-19 14:26:18.561 INFO  Layline                                            - [LAY-11600] starting the activation controller
+24-12-19 14:26:18.592 INFO  Layline.SchedulerSlave                             - [LAY-12000] cluster node local scheduler slave started
+24-12-19 14:26:18.661 INFO  Layline.Resource                                   - [LAY-02650] starting the resource controller
+24-12-19 14:26:18.662 INFO  Layline.Format                                     - [LAY-15000] creating the format controller
+24-12-19 14:26:18.671 INFO  Layline.Service                                    - [LAY-20000] creating the service controller
+24-12-19 14:26:18.678 INFO  Layline.Connection                                 - [LAY-17500] starting the connection controller
+24-12-19 14:26:18.678 INFO  Layline.Sink                                       - [LAY-30000] starting the sink controller
+24-12-19 14:26:18.683 INFO  Layline.Extension                                  - [LAY-45000] starting the extension controller
+24-12-19 14:26:18.688 INFO  Layline.Source                                     - [LAY-25000] starting the source controller
+24-12-19 14:26:18.692 INFO  Layline.Workflow                                   - [LAY-04000] starting the workflow controller
+24-12-19 14:26:19.268 INFO  Layline.RestServer                                 - [LAY-00360] rest server is listening on address http://0.0.0.0:6842
+24-12-19 14:26:20.386 INFO  Layline.SchedulerSlave                             - [LAY-12003] successfully registered at master on node pekko://layline@127.0.0.1:5843
+24-12-19 14:26:20.632 INFO  Layline.ActivationController                       - [LAY-11611] new activation target 'DeploymentRoot' received
+24-12-19 14:26:20.783 INFO  Layline                                            - [LAY-11603] received data of deployment 'DeploymentRoot' from the deployment storage
+24-12-19 14:26:20.789 INFO  Layline.ActivationController                       - [LAY-11612] switching to activation 'DeploymentRoot'

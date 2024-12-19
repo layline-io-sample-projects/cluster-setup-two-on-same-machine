@@ -1,0 +1,15 @@
+{
+  "@type" : "deploy/cluster",
+  "assetClass" : "deploy",
+  "assetType" : "cluster",
+  "version" : "2.1.1",
+  "uuid" : "000bc459-a749-47bd-a770-3b5931afe3a1",
+  "name" : "Linux",
+  "bootstrapNodes" : [
+    {
+      "modifier" : "add",
+      "uuid" : "96fec333-9c9f-48d9-8c55-36ba3551d0ab",
+      "data" : "http://ubuntu.orb.local:5842"
+    }
+  ]
+}

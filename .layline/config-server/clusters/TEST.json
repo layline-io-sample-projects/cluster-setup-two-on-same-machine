@@ -1,0 +1,15 @@
+{
+  "@type" : "deploy/cluster",
+  "assetClass" : "deploy",
+  "assetType" : "cluster",
+  "version" : "2.1.1",
+  "uuid" : "9e6a179b-9aff-4ddb-8982-66d72d85b8f1",
+  "name" : "TEST",
+  "bootstrapNodes" : [
+    {
+      "modifier" : "add",
+      "uuid" : "51669401-e9d9-434e-9860-334792b61db5",
+      "data" : "http://ubuntu:5842"
+    }
+  ]
+}
