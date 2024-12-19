@@ -1,22 +1,42 @@
-24-12-19 14:26:05.681 INFO  Layline                                            - [LAY-00050] ###################################################################
-24-12-19 14:26:05.683 INFO  Layline                                            - [LAY-00050] #       Layline Reactive Engine 2.1.1 (2024-12-13 13:16:36)       #
-24-12-19 14:26:05.683 INFO  Layline                                            - [LAY-00050] #                                                                 #
-24-12-19 14:26:05.683 INFO  Layline                                            - [LAY-00050] #  Copyright (C) 2018-2024  layline.io GmbH <https://layline.io>  #
-24-12-19 14:26:05.684 INFO  Layline                                            - [LAY-00050] ###################################################################
-24-12-19 14:26:08.150 INFO  Layline                                            - [LAY-11000] trying to connect to the cluster
-24-12-19 14:26:18.206 INFO  Layline                                            - [LAY-11001] cluster successfully joined, member status is up
-24-12-19 14:26:18.561 INFO  Layline                                            - [LAY-11600] starting the activation controller
-24-12-19 14:26:18.592 INFO  Layline.SchedulerSlave                             - [LAY-12000] cluster node local scheduler slave started
-24-12-19 14:26:18.661 INFO  Layline.Resource                                   - [LAY-02650] starting the resource controller
-24-12-19 14:26:18.662 INFO  Layline.Format                                     - [LAY-15000] creating the format controller
-24-12-19 14:26:18.671 INFO  Layline.Service                                    - [LAY-20000] creating the service controller
-24-12-19 14:26:18.678 INFO  Layline.Connection                                 - [LAY-17500] starting the connection controller
-24-12-19 14:26:18.678 INFO  Layline.Sink                                       - [LAY-30000] starting the sink controller
-24-12-19 14:26:18.683 INFO  Layline.Extension                                  - [LAY-45000] starting the extension controller
-24-12-19 14:26:18.688 INFO  Layline.Source                                     - [LAY-25000] starting the source controller
-24-12-19 14:26:18.692 INFO  Layline.Workflow                                   - [LAY-04000] starting the workflow controller
-24-12-19 14:26:19.268 INFO  Layline.RestServer                                 - [LAY-00360] rest server is listening on address http://0.0.0.0:6842
-24-12-19 14:26:20.386 INFO  Layline.SchedulerSlave                             - [LAY-12003] successfully registered at master on node pekko://layline@127.0.0.1:5843
-24-12-19 14:26:20.632 INFO  Layline.ActivationController                       - [LAY-11611] new activation target 'DeploymentRoot' received
-24-12-19 14:26:20.783 INFO  Layline                                            - [LAY-11603] received data of deployment 'DeploymentRoot' from the deployment storage
-24-12-19 14:26:20.789 INFO  Layline.ActivationController                       - [LAY-11612] switching to activation 'DeploymentRoot'
+24-12-19 15:11:57.466 INFO  Layline                                            - [LAY-00050] ###################################################################
+24-12-19 15:11:57.468 INFO  Layline                                            - [LAY-00050] #       Layline Reactive Engine 2.1.1 (2024-12-13 13:16:36)       #
+24-12-19 15:11:57.468 INFO  Layline                                            - [LAY-00050] #                                                                 #
+24-12-19 15:11:57.469 INFO  Layline                                            - [LAY-00050] #  Copyright (C) 2018-2024  layline.io GmbH <https://layline.io>  #
+24-12-19 15:11:57.469 INFO  Layline                                            - [LAY-00050] ###################################################################
+24-12-19 15:11:59.640 INFO  Layline                                            - [LAY-11000] trying to connect to the cluster
+24-12-19 15:12:17.963 INFO  Layline                                            - [LAY-11001] cluster successfully joined, member status is up
+24-12-19 15:12:18.284 INFO  Layline                                            - [LAY-11600] starting the activation controller
+24-12-19 15:12:18.327 INFO  Layline.SchedulerSlave                             - [LAY-12000] cluster node local scheduler slave started
+24-12-19 15:12:18.367 INFO  Layline.Format                                     - [LAY-15000] creating the format controller
+24-12-19 15:12:18.371 INFO  Layline.Resource                                   - [LAY-02650] starting the resource controller
+24-12-19 15:12:18.373 INFO  Layline.Connection                                 - [LAY-17500] starting the connection controller
+24-12-19 15:12:18.381 INFO  Layline.Service                                    - [LAY-20000] creating the service controller
+24-12-19 15:12:18.383 INFO  Layline.Extension                                  - [LAY-45000] starting the extension controller
+24-12-19 15:12:18.388 INFO  Layline.Source                                     - [LAY-25000] starting the source controller
+24-12-19 15:12:18.396 INFO  Layline.Sink                                       - [LAY-30000] starting the sink controller
+24-12-19 15:12:18.404 INFO  Layline.Workflow                                   - [LAY-04000] starting the workflow controller
+24-12-19 15:12:18.707 INFO  Layline.SchedulerSlave                             - [LAY-12003] successfully registered at master on node pekko://layline@127.0.0.1:5843
+24-12-19 15:12:18.730 INFO  Layline.ActivationController                       - [LAY-11611] new activation target 'DeploymentRoot' received
+24-12-19 15:12:18.885 INFO  Layline                                            - [LAY-11603] received data of deployment 'DeploymentRoot' from the deployment storage
+24-12-19 15:12:18.888 INFO  Layline.ActivationController                       - [LAY-11612] switching to activation 'DeploymentRoot'
+24-12-19 15:12:18.994 INFO  Layline.RestServer                                 - [LAY-00360] rest server is listening on address http://0.0.0.0:6842
+24-12-19 15:12:45.038 INFO  Layline.DeploymentStorage                          - [LAY-11500] deployment storage created
+24-12-19 15:12:45.043 INFO  Layline.DeploymentStorage.Objects                  - [LAY-11502] starting the object database
+24-12-19 15:12:45.077 INFO  Layline.AccessCoordinator.Resource                 - [LAY-11737] recovery of resources coordinator completed
+24-12-19 15:12:45.080 INFO  Layline.AccessCoordinator.Source                   - [LAY-11703] recovery of sources coordinator completed
+24-12-19 15:12:45.082 INFO  Layline.SnifferDirectory                           - [LAY-12403] recovery of the sniffer directory completed (0 storages used)
+24-12-19 15:12:45.105 INFO  Layline.AiStorage                                  - [LAY-12505] recovery of the AI model database completed
+24-12-19 15:12:45.106 INFO  Layline.SecurityStorage                            - [LAY-12248] recovery of the oauth storage completed (0 token(s) loaded)
+24-12-19 15:12:45.114 INFO  Layline.DeploymentStorage.Objects                  - [LAY-11505] recovery of the object database completed
+24-12-19 15:12:45.223 INFO  Layline.SecurityStorage                            - [LAY-12203] recovery of the security storage completed (1 RSA key(s) loaded)
+24-12-19 15:12:45.225 INFO  Layline.UserStorage                                - [LAY-12303] recovery of the user storage completed (1 user(s) loaded)
+24-12-19 15:12:45.621 INFO  Layline.DeploymentStorage.Deployments              - [LAY-11507] starting the deployment database
+24-12-19 15:12:45.632 INFO  Layline.DeploymentStorage.Deployments              - [LAY-11510] recovery of the deployment database completed
+24-12-19 15:12:46.403 INFO  Layline.SnifferDirectory                           - [LAY-12404] sniffer directory is stopped
+24-12-19 15:12:46.405 INFO  Layline.DeploymentStorage.Objects                  - [LAY-11506] object database is stopped
+24-12-19 15:12:46.403 ERROR Layline.UserStorage                                - [LAY-12304] user storage is stopped
+24-12-19 15:12:46.404 INFO  Layline.AccessCoordinator                          - [LAY-11701] access coordinator is stopped on node pekko://layline@127.0.0.1:6843
+24-12-19 15:12:46.406 INFO  Layline.DeploymentStorage.Deployments              - [LAY-11511] deployment database is stopped
+24-12-19 15:12:46.403 ERROR Layline.SecurityStorage                            - [LAY-12204] security storage is stopped
+24-12-19 15:12:46.403 INFO  Layline.AiStorage                                  - [LAY-12506] AI model database database is stopped
+24-12-19 15:12:46.408 INFO  Layline.DeploymentStorage                          - [LAY-11501] deployment storage stopped

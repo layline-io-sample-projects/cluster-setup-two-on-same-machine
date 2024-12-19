@@ -1,94 +1,29 @@
-24-12-18 16:48:36.462 INFO  ConfigServer                         - [LAY-00050] ###################################################################
-24-12-18 16:48:36.464 INFO  ConfigServer                         - [LAY-00050] #        Layline Config Server 2.1.1 (2024-12-13 13:16:36)        #
-24-12-18 16:48:36.464 INFO  ConfigServer                         - [LAY-00050] #                                                                 #
-24-12-18 16:48:36.465 INFO  ConfigServer                         - [LAY-00050] #  Copyright (C) 2018-2024  layline.io GmbH <https://layline.io>  #
-24-12-18 16:48:36.465 INFO  ConfigServer                         - [LAY-00050] ###################################################################
-24-12-18 16:48:37.885 INFO  ConfigServer.SecurityStorage         - [LAY-12200] starting the security storage
-24-12-18 16:48:38.042 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 's3' ('io.layline.config.plugin.common.s3.PluginFactory')
-24-12-18 16:48:38.044 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'ftp' ('io.layline.config.plugin.common.ftp.FtpPluginFactory')
-24-12-18 16:48:38.049 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'processor_mapping' ('io.layline.config.plugin.processor.mapping.PluginFactory')
-24-12-18 16:48:38.052 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'event_bridge' ('io.layline.config.plugin.common.event_bridge.PluginFactory')
-24-12-18 16:48:38.054 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'smb' ('io.layline.config.plugin.common.smb.SmbPluginFactory')
-24-12-18 16:48:38.055 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'google_cloud' ('io.layline.config.plugin.common.gc.PluginFactory')
-24-12-18 16:48:38.058 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'webdav' ('io.layline.config.plugin.common.webdav.WebdavPluginFactory')
-24-12-18 16:48:38.059 INFO  ConfigServer                         - [LAY-10016] starting the configuration server root actor
-24-12-18 16:48:38.131 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'format_asn1' ('io.layline.config.plugin.format.asn1.PluginFactory')
-24-12-18 16:48:38.149 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'format_generic' ('io.layline.config.plugin.format.generic.PluginFactory')
-24-12-18 16:48:38.154 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'kinesis' ('io.layline.config.plugin.common.kinesis.PluginFactory')
-24-12-18 16:48:38.173 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'sqs' ('io.layline.config.plugin.common.sqs.PluginFactory')
-24-12-18 16:48:38.180 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'xml' ('io.layline.config.plugin.common.xml.PluginFactory')
-24-12-18 16:48:38.183 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'hazelcast' ('io.layline.config.plugin.common.hazelcast.PluginFactory')
-24-12-18 16:48:38.188 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'kafka' ('io.layline.config.plugin.common.kafka.KafkaPluginFactory')
-24-12-18 16:48:38.195 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'sns' ('io.layline.config.plugin.common.sns.PluginFactory')
-24-12-18 16:48:38.197 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'aws' ('io.layline.config.plugin.common.aws.PluginFactory')
-24-12-18 16:48:38.203 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'soap' ('io.layline.config.plugin.common.soap.PluginFactory')
-24-12-18 16:48:38.519 INFO  ConfigServer.RestServer              - [LAY-00360] rest server is listening on address http://127.0.0.1:5841
-24-12-18 16:48:38.520 INFO  ConfigServer                         - [LAY-10018] layline configuration server is up and running ...
-24-12-18 16:48:38.655 INFO  ConfigServer.SecurityStorage         - [LAY-12248] recovery of the oauth storage completed (0 token(s) loaded)
-24-12-18 16:48:38.656 INFO  ConfigServer.UserStorage             - [LAY-12303] recovery of the user storage completed (0 user(s) loaded)
-24-12-18 16:48:38.656 INFO  ConfigServer.SecurityStorage         - [LAY-12203] recovery of the security storage completed (0 RSA key(s) loaded)
-24-12-18 16:48:38.827 INFO  ConfigServer.SecurityStorage         - [LAY-12214] creating new RSA key 'DefaultKey' for user admin (fingerprint=CB+sFrYHvZFtbjvN4yU65Jq5vQqv8PAUVRhMxqOiLPA=)
-24-12-18 16:48:38.916 INFO  ConfigServer.SecurityStorage         - [LAY-12212] successfully created the default RSA key
-24-12-18 16:48:39.664 INFO  ConfigServer.UserStorage             - [LAY-12319] creating user 'admin'
-24-12-18 16:48:39.666 INFO  ConfigServer.UserStorage             - [LAY-12307] creating a new key for the signing of the json web tokens
-24-12-18 16:48:39.791 INFO  ConfigServer.UserStorage             - [LAY-12308] new signing key for json web tokens created
-24-12-18 16:48:39.791 INFO  ConfigServer.UserStorage             - [LAY-12320] user 'admin' created
-24-12-19 13:44:19.707 INFO  ConfigServer                         - [LAY-00050] ###################################################################
-24-12-19 13:44:19.710 INFO  ConfigServer                         - [LAY-00050] #        Layline Config Server 2.1.1 (2024-12-13 13:16:36)        #
-24-12-19 13:44:19.711 INFO  ConfigServer                         - [LAY-00050] #                                                                 #
-24-12-19 13:44:19.711 INFO  ConfigServer                         - [LAY-00050] #  Copyright (C) 2018-2024  layline.io GmbH <https://layline.io>  #
-24-12-19 13:44:19.712 INFO  ConfigServer                         - [LAY-00050] ###################################################################
-24-12-19 13:44:21.461 INFO  ConfigServer.SecurityStorage         - [LAY-12200] starting the security storage
-24-12-19 13:44:21.614 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 's3' ('io.layline.config.plugin.common.s3.PluginFactory')
-24-12-19 13:44:21.617 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'ftp' ('io.layline.config.plugin.common.ftp.FtpPluginFactory')
-24-12-19 13:44:21.623 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'processor_mapping' ('io.layline.config.plugin.processor.mapping.PluginFactory')
-24-12-19 13:44:21.630 INFO  ConfigServer                         - [LAY-10016] starting the configuration server root actor
-24-12-19 13:44:21.633 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'event_bridge' ('io.layline.config.plugin.common.event_bridge.PluginFactory')
-24-12-19 13:44:21.638 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'smb' ('io.layline.config.plugin.common.smb.SmbPluginFactory')
-24-12-19 13:44:21.639 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'google_cloud' ('io.layline.config.plugin.common.gc.PluginFactory')
-24-12-19 13:44:21.641 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'webdav' ('io.layline.config.plugin.common.webdav.WebdavPluginFactory')
-24-12-19 13:44:21.742 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'format_asn1' ('io.layline.config.plugin.format.asn1.PluginFactory')
-24-12-19 13:44:21.758 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'format_generic' ('io.layline.config.plugin.format.generic.PluginFactory')
-24-12-19 13:44:21.762 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'kinesis' ('io.layline.config.plugin.common.kinesis.PluginFactory')
-24-12-19 13:44:21.765 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'sqs' ('io.layline.config.plugin.common.sqs.PluginFactory')
-24-12-19 13:44:21.782 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'xml' ('io.layline.config.plugin.common.xml.PluginFactory')
-24-12-19 13:44:21.784 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'hazelcast' ('io.layline.config.plugin.common.hazelcast.PluginFactory')
-24-12-19 13:44:21.791 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'kafka' ('io.layline.config.plugin.common.kafka.KafkaPluginFactory')
-24-12-19 13:44:21.793 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'sns' ('io.layline.config.plugin.common.sns.PluginFactory')
-24-12-19 13:44:21.796 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'aws' ('io.layline.config.plugin.common.aws.PluginFactory')
-24-12-19 13:44:21.804 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'soap' ('io.layline.config.plugin.common.soap.PluginFactory')
-24-12-19 13:44:22.374 INFO  ConfigServer.RestServer              - [LAY-00360] rest server is listening on address http://127.0.0.1:5841
-24-12-19 13:44:22.375 INFO  ConfigServer                         - [LAY-10018] layline configuration server is up and running ...
-24-12-19 13:44:22.573 INFO  ConfigServer.SecurityStorage         - [LAY-12248] recovery of the oauth storage completed (0 token(s) loaded)
-24-12-19 13:44:22.720 INFO  ConfigServer.SecurityStorage         - [LAY-12203] recovery of the security storage completed (1 RSA key(s) loaded)
-24-12-19 13:44:22.728 INFO  ConfigServer.UserStorage             - [LAY-12303] recovery of the user storage completed (1 user(s) loaded)
-24-12-19 13:46:26.926 INFO  ConfigServer                         - [LAY-00050] ###################################################################
-24-12-19 13:46:26.928 INFO  ConfigServer                         - [LAY-00050] #        Layline Config Server 2.1.1 (2024-12-13 13:16:36)        #
-24-12-19 13:46:26.928 INFO  ConfigServer                         - [LAY-00050] #                                                                 #
-24-12-19 13:46:26.929 INFO  ConfigServer                         - [LAY-00050] #  Copyright (C) 2018-2024  layline.io GmbH <https://layline.io>  #
-24-12-19 13:46:26.929 INFO  ConfigServer                         - [LAY-00050] ###################################################################
-24-12-19 13:46:28.560 INFO  ConfigServer.SecurityStorage         - [LAY-12200] starting the security storage
-24-12-19 13:46:28.783 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 's3' ('io.layline.config.plugin.common.s3.PluginFactory')
-24-12-19 13:46:28.788 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'ftp' ('io.layline.config.plugin.common.ftp.FtpPluginFactory')
-24-12-19 13:46:28.796 INFO  ConfigServer                         - [LAY-10016] starting the configuration server root actor
-24-12-19 13:46:28.797 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'processor_mapping' ('io.layline.config.plugin.processor.mapping.PluginFactory')
-24-12-19 13:46:28.799 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'event_bridge' ('io.layline.config.plugin.common.event_bridge.PluginFactory')
-24-12-19 13:46:28.803 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'smb' ('io.layline.config.plugin.common.smb.SmbPluginFactory')
-24-12-19 13:46:28.806 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'google_cloud' ('io.layline.config.plugin.common.gc.PluginFactory')
-24-12-19 13:46:28.810 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'webdav' ('io.layline.config.plugin.common.webdav.WebdavPluginFactory')
-24-12-19 13:46:28.874 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'format_asn1' ('io.layline.config.plugin.format.asn1.PluginFactory')
-24-12-19 13:46:28.890 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'format_generic' ('io.layline.config.plugin.format.generic.PluginFactory')
-24-12-19 13:46:28.894 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'kinesis' ('io.layline.config.plugin.common.kinesis.PluginFactory')
-24-12-19 13:46:28.896 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'sqs' ('io.layline.config.plugin.common.sqs.PluginFactory')
-24-12-19 13:46:28.900 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'xml' ('io.layline.config.plugin.common.xml.PluginFactory')
-24-12-19 13:46:28.902 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'hazelcast' ('io.layline.config.plugin.common.hazelcast.PluginFactory')
-24-12-19 13:46:28.904 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'kafka' ('io.layline.config.plugin.common.kafka.KafkaPluginFactory')
-24-12-19 13:46:28.909 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'sns' ('io.layline.config.plugin.common.sns.PluginFactory')
-24-12-19 13:46:28.911 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'aws' ('io.layline.config.plugin.common.aws.PluginFactory')
-24-12-19 13:46:28.916 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'soap' ('io.layline.config.plugin.common.soap.PluginFactory')
-24-12-19 13:46:29.454 INFO  ConfigServer.RestServer              - [LAY-00360] rest server is listening on address http://0.0.0.0:5841
-24-12-19 13:46:29.454 INFO  ConfigServer                         - [LAY-10018] layline configuration server is up and running ...
-24-12-19 13:46:29.635 INFO  ConfigServer.SecurityStorage         - [LAY-12248] recovery of the oauth storage completed (0 token(s) loaded)
-24-12-19 13:46:29.799 INFO  ConfigServer.SecurityStorage         - [LAY-12203] recovery of the security storage completed (1 RSA key(s) loaded)
-24-12-19 13:46:29.802 INFO  ConfigServer.UserStorage             - [LAY-12303] recovery of the user storage completed (1 user(s) loaded)
-24-12-19 13:46:36.553 ERROR ConfigServer.UserStorage             - [LAY-00100] io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+24-12-19 15:02:28.964 INFO  ConfigServer                         - [LAY-00050] ###################################################################
+24-12-19 15:02:28.975 INFO  ConfigServer                         - [LAY-00050] #        Layline Config Server 2.1.1 (2024-12-13 13:16:36)        #
+24-12-19 15:02:28.975 INFO  ConfigServer                         - [LAY-00050] #                                                                 #
+24-12-19 15:02:28.975 INFO  ConfigServer                         - [LAY-00050] #  Copyright (C) 2018-2024  layline.io GmbH <https://layline.io>  #
+24-12-19 15:02:28.975 INFO  ConfigServer                         - [LAY-00050] ###################################################################
+24-12-19 15:02:30.310 INFO  ConfigServer.SecurityStorage         - [LAY-12200] starting the security storage
+24-12-19 15:02:30.421 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 's3' ('io.layline.config.plugin.common.s3.PluginFactory')
+24-12-19 15:02:30.424 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'ftp' ('io.layline.config.plugin.common.ftp.FtpPluginFactory')
+24-12-19 15:02:30.426 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'processor_mapping' ('io.layline.config.plugin.processor.mapping.PluginFactory')
+24-12-19 15:02:30.428 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'event_bridge' ('io.layline.config.plugin.common.event_bridge.PluginFactory')
+24-12-19 15:02:30.430 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'smb' ('io.layline.config.plugin.common.smb.SmbPluginFactory')
+24-12-19 15:02:30.430 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'google_cloud' ('io.layline.config.plugin.common.gc.PluginFactory')
+24-12-19 15:02:30.435 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'webdav' ('io.layline.config.plugin.common.webdav.WebdavPluginFactory')
+24-12-19 15:02:30.440 INFO  ConfigServer                         - [LAY-10016] starting the configuration server root actor
+24-12-19 15:02:30.471 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'format_asn1' ('io.layline.config.plugin.format.asn1.PluginFactory')
+24-12-19 15:02:30.475 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'format_generic' ('io.layline.config.plugin.format.generic.PluginFactory')
+24-12-19 15:02:30.477 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'kinesis' ('io.layline.config.plugin.common.kinesis.PluginFactory')
+24-12-19 15:02:30.479 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'sqs' ('io.layline.config.plugin.common.sqs.PluginFactory')
+24-12-19 15:02:30.482 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'xml' ('io.layline.config.plugin.common.xml.PluginFactory')
+24-12-19 15:02:30.484 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'hazelcast' ('io.layline.config.plugin.common.hazelcast.PluginFactory')
+24-12-19 15:02:30.486 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'kafka' ('io.layline.config.plugin.common.kafka.KafkaPluginFactory')
+24-12-19 15:02:30.488 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'sns' ('io.layline.config.plugin.common.sns.PluginFactory')
+24-12-19 15:02:30.490 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'aws' ('io.layline.config.plugin.common.aws.PluginFactory')
+24-12-19 15:02:30.492 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'soap' ('io.layline.config.plugin.common.soap.PluginFactory')
+24-12-19 15:02:30.791 INFO  ConfigServer.RestServer              - [LAY-00360] rest server is listening on address http://0.0.0.0:5841
+24-12-19 15:02:30.792 INFO  ConfigServer                         - [LAY-10018] layline configuration server is up and running ...
+24-12-19 15:02:31.002 INFO  ConfigServer.SecurityStorage         - [LAY-12248] recovery of the oauth storage completed (0 token(s) loaded)
+24-12-19 15:02:31.055 INFO  ConfigServer.SecurityStorage         - [LAY-12203] recovery of the security storage completed (1 RSA key(s) loaded)
+24-12-19 15:02:31.075 INFO  ConfigServer.UserStorage             - [LAY-12303] recovery of the user storage completed (1 user(s) loaded)
