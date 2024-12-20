@@ -211,3 +211,102 @@ You should now also observe that the engine in the terminal where you started th
 In case the engines cannot find each other due to network or configuration issues, they will be stuck at `trying to connect to the cluster`. 
 In that case check your settings carefully.
 
+## Starting the Configuration Server
+
+Note: The Configuration Server can be started independently of the Reactive Cluster.
+
+Open another terminal and enter the following:
+
+```bash
+config-server
+```
+
+This should give you the following output:
+
+```bash
+24-12-19 15:02:28.964 INFO  ConfigServer                         - [LAY-00050] ###################################################################
+24-12-19 15:02:28.975 INFO  ConfigServer                         - [LAY-00050] #        Layline Config Server 2.1.1 (2024-12-13 13:16:36)        #
+24-12-19 15:02:28.975 INFO  ConfigServer                         - [LAY-00050] #                                                                 #
+24-12-19 15:02:28.975 INFO  ConfigServer                         - [LAY-00050] #  Copyright (C) 2018-2024  layline.io GmbH <https://layline.io>  #
+24-12-19 15:02:28.975 INFO  ConfigServer                         - [LAY-00050] ###################################################################
+24-12-19 15:02:30.310 INFO  ConfigServer.SecurityStorage         - [LAY-12200] starting the security storage
+24-12-19 15:02:30.421 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 's3' ('io.layline.config.plugin.common.s3.PluginFactory')
+24-12-19 15:02:30.424 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'ftp' ('io.layline.config.plugin.common.ftp.FtpPluginFactory')
+24-12-19 15:02:30.426 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'processor_mapping' ('io.layline.config.plugin.processor.mapping.PluginFactory')
+24-12-19 15:02:30.428 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'event_bridge' ('io.layline.config.plugin.common.event_bridge.PluginFactory')
+24-12-19 15:02:30.430 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'smb' ('io.layline.config.plugin.common.smb.SmbPluginFactory')
+24-12-19 15:02:30.430 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'google_cloud' ('io.layline.config.plugin.common.gc.PluginFactory')
+24-12-19 15:02:30.435 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'webdav' ('io.layline.config.plugin.common.webdav.WebdavPluginFactory')
+24-12-19 15:02:30.440 INFO  ConfigServer                         - [LAY-10016] starting the configuration server root actor
+24-12-19 15:02:30.471 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'format_asn1' ('io.layline.config.plugin.format.asn1.PluginFactory')
+24-12-19 15:02:30.475 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'format_generic' ('io.layline.config.plugin.format.generic.PluginFactory')
+24-12-19 15:02:30.477 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'kinesis' ('io.layline.config.plugin.common.kinesis.PluginFactory')
+24-12-19 15:02:30.479 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'sqs' ('io.layline.config.plugin.common.sqs.PluginFactory')
+24-12-19 15:02:30.482 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'xml' ('io.layline.config.plugin.common.xml.PluginFactory')
+24-12-19 15:02:30.484 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'hazelcast' ('io.layline.config.plugin.common.hazelcast.PluginFactory')
+24-12-19 15:02:30.486 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'kafka' ('io.layline.config.plugin.common.kafka.KafkaPluginFactory')
+24-12-19 15:02:30.488 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'sns' ('io.layline.config.plugin.common.sns.PluginFactory')
+24-12-19 15:02:30.490 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'aws' ('io.layline.config.plugin.common.aws.PluginFactory')
+24-12-19 15:02:30.492 INFO  ConfigServer.Plugins                 - [LAY-00321] successfully registered plugin 'soap' ('io.layline.config.plugin.common.soap.PluginFactory')
+24-12-19 15:02:30.791 INFO  ConfigServer.RestServer              - [LAY-00360] rest server is listening on address http://0.0.0.0:5841
+24-12-19 15:02:30.792 INFO  ConfigServer                         - [LAY-10018] layline configuration server is up and running ...
+24-12-19 15:02:31.002 INFO  ConfigServer.SecurityStorage         - [LAY-12248] recovery of the oauth storage completed (0 token(s) loaded)
+24-12-19 15:02:31.055 INFO  ConfigServer.SecurityStorage         - [LAY-12203] recovery of the security storage completed (1 RSA key(s) loaded)
+24-12-19 15:02:31.075 INFO  ConfigServer.UserStorage             - [LAY-12303] recovery of the user storage completed (1 user(s) loaded)
+```
+
+Make sure that it outputs `rest server is listening on address http://0.0.0.0:5841` so that it excepts external connections and you can reach it via brrowser from outside the machine.
+
+## Invoking the Configuration Server via browser
+
+Open a browser and point it to `http://<ip-address / url>:5841`. In our example this is `http://ubuntu.orb.local:5841'.
+
+This should give you the following output:
+
+![image](https://github.com/user-attachments/assets/4e0e1dd4-eaf3-4801-97a9-58fdc6b654a8)
+
+## Check that the cluster connection works and the cluster is running
+
+#### Log in to the Configuration Server
+
+Enter `admin/admin` for user name and password.
+
+#### Add a cluster setting
+
+Head to the Settings tab to add a cluster setting.
+Follow the numbers in the following image to create the setting:
+
+![2024-12-20 at 12 12 05](https://github.com/user-attachments/assets/c71574b2-01c7-481e-af8d-323bb9fc462d)
+
+![2024-12-20 at 11 59 28](https://github.com/user-attachments/assets/69528253-276f-4087-b481-e23110f2f72b)
+
+#### Check that the Reactive Cluster is reachable and runs
+
+Now that we have created the cluster setting, let's check that we can reach it and it runs.
+For this, go to the Operations tab and select the Cluster we just added from the drop-down menu:
+
+![2024-12-20 at 12 13 57](https://github.com/user-attachments/assets/ddff9340-cecf-4f5c-9bfd-29d75a73b2bd)
+
+If everything is configured correctly, a login dialogue should appead. At the bottomg of it you should see a green `Cluster available` hint.
+If you don't see this, then the Cluster cannot be reached under the bootstrap node you configured.
+
+Enter `admin/admin` as user name and password to log in to the cluster.
+
+The scren should now display the following:
+
+![2024-12-20 at 12 17 04](https://github.com/user-attachments/assets/8bb2f412-5cda-4ab0-8f6c-8d723841e4e2)
+
+You should see the two Reactive Engines in the Cluster. If you select one of them you can see it's state and technical parameters.
+
+---
+
+That's it!
+
+Should you run into any issues, feel free to contact our [support](mailto:support@layline.io).
+We are more than happy to get your environment up and running.
+
+Also check out out [website](https://layline.io) and [documentation](https://doc.layline.io).
+
+
+
+
